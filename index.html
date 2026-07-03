@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Dreams - Авторские торты</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #121212; color: #ffffff; font-family: 'Montserrat', sans-serif; line-height: 1.6; }
+        
+        header { text-align: center; padding: 50px 20px; }
+        header h1 { color: #ff69b4; font-size: 3rem; margin-bottom: 20px; }
+        
+        /* Навигация */
+        nav { text-align: center; margin-bottom: 40px; }
+        nav a { color: #ff69b4; margin: 0 15px; text-decoration: none; font-weight: bold; border-bottom: 2px solid transparent; }
+        nav a:hover { border-bottom: 2px solid #ff69b4; }
+
+        .container { display: flex; flex-direction: column; gap: 40px; max-width: 800px; margin: 0 auto; padding: 20px; }
+        
+        .card { background: #1e1e1e; border: 2px solid #333; border-radius: 20px; padding: 30px; transition: 0.3s; }
+        .card:hover { border-color: #ff69b4; }
+        
+        .card img { width: 100%; border-radius: 15px; margin-bottom: 20px; }
+        .card h2 { color: #ff69b4; margin-bottom: 10px; }
+        .ingredients { margin: 15px 0; font-size: 0.95rem; color: #bbb; background: #2a2a2a; padding: 15px; border-radius: 10px; }
+        
+        .footer-promo { text-align: center; padding: 60px 20px; background: #1a1a1a; margin-top: 50px; }
+        .footer-promo h2 { color: #ff69b4; }
+        .btn { display: inline-block; background: #ff69b4; color: #121212; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sweet Dreams</h1>
+        <nav>
+            <a href="#snickers">Сникерс</a>
+            <a href="#tiramisu">Тирамису</a>
+            <a href="#yogurt">Йогуртовый</a>
+            <a href="#twix">Твикс</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Сникерс -->
+        <div class="card" id="snickers">
+            <img src="snikers.png" alt="Торт Сникерс">
+            <h2>Торт Сникерс</h2>
+            <p>Настоящая бомба для любителей шоколада и карамели.</p>
+            <div class="ingredients">
+                <strong>Состав:</strong> Шоколадный бисквит, домашняя сливочная карамель, обжаренный арахис, крем-чиз, шоколадный ганаш.
+            </div>
+            <p><strong>Цена:</strong> 1500 руб.</p>
+            <a href="mailto:2whwegfuh@gmail.com?subject=Заказ торта: Сникерс&body=Здравствуйте, я хочу заказать торт Сникерс." class="btn">Заказать на почту</a>
+        </div>
+
+        <!-- Тирамису -->
+        <div class="card" id="tiramisu">
+            <img src="tiram.png" alt="Торт Тирамису">
+            <h2>Торт Тирамису</h2>
+            <p>Итальянская классика с нежным кофейным послевкусием.</p>
+            <div class="ingredients">
+                <strong>Состав:</strong> Бисквит савоярди, пропитка натуральным эспрессо, сыр маскарпоне, сливки 33%, какао-пудра.
+            </div>
+            <p><strong>Цена:</strong> 1500 руб.</p>
+            <a href="mailto:2whwegfuh@gmail.com?subject=Заказ торта: Тирамису&body=Здравствуйте, я хочу заказать торт Тирамису." class="btn">Заказать на почту</a>
+        </div>
+
+        <!-- Йогуртовый -->
+        <div class="card" id="yogurt">
+            <img src="yogurt.png" alt="Торт Йогуртовый">
+            <h2>Торт Йогуртовый</h2>
+            <p>Невесомый, легкий и освежающий десерт для любого повода.</p>
+            <div class="ingredients">
+                <strong>Состав:</strong> Ванильный бисквит, йогуртовое суфле, свежие ягоды малины и клубники, легкий сливочный крем.
+            </div>
+            <p><strong>Цена:</strong> 1500 руб.</p>
+            <a href="mailto:2whwegfuh@gmail.com?subject=Заказ торта: Йогуртовый&body=Здравствуйте, я хочу заказать торт Йогуртовый." class="btn">Заказать на почту</a>
+        </div>
+
+        <!-- Твикс -->
+        <div class="card" id="twix">
+            <img src="twix.png" alt="Торт Твикс">
+            <h2>Торт Твикс</h2>
+            <p>Любимый вкус детства в премиальном исполнении.</p>
+            <div class="ingredients">
+                <strong>Состав:</strong> Песочные коржи, тягучая сливочная карамель, слой хрустящего печенья, молочный шоколад.
+            </div>
+            <p><strong>Цена:</strong> 1500 руб.</p>
+            <a href="mailto:2whwegfuh@gmail.com?subject=Заказ торта: Твикс&body=Здравствуйте, я хочу заказать торт Твикс." class="btn">Заказать на почту</a>
+        </div>
+    </div>
+
+    <section class="footer-promo">
+        <h2>Почему выбирают нас?</h2>
+        <p>Мы используем только натуральные фермерские продукты и готовим торты специально для вас за 24 часа. Свежесть гарантирована!</p>
+        <p style="margin-top:20px;">Больше вкусных стратегий и секретов в нашем канале: <br>
+        <a href="https://t.me/onemilka1" style="color:#ff69b4; font-size: 1.5rem;">@onemilka1</a></p>
+    </section>
+
+</body>
+</html>
